@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    string name;
+
+    cout << "Welcome to the basic structure of a C++ program!" << endl;
+    cout << "Please enter your full name: ";
+    getline(cin, name);
+
+    cout << "Hello, " << name << "! Nice to meet you." << endl;
+
+    return 0;
+}

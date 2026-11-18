@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+// ----------- Function Prototypes -----------
+void greet();                
+void greet(string name);     
+
+// ----------- Main Function -----------
+int main() {
+    greet();                  // Calls function with no arguments
+    greet("John");           // Calls overloaded function
+
+    return 0;
+}
+
+// ----------- Function Definitions -----------
+void greet() {
+    cout << "Hello! Welcome to the C++ program." << endl;
+}
+
+void greet(string name) {
+    cout << "Hello, " << name << "! Welcome to the C++ program." << endl;
+}

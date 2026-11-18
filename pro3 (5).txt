@@ -1,0 +1,62 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int number;
+
+    // 1. IF Statement
+    cout << "Enter a number: ";
+    cin >> number;
+
+    if (number > 0) {
+        cout << "You entered a positive number." << endl;
+    }
+    else if (number < 0) {
+        cout << "You entered a negative number." << endl;
+    }
+    else {
+        cout << "You entered zero." << endl;
+    }
+
+    // 2. SWITCH Statement
+    int choice;
+    cout << "\nMenu:\n1. Say Hello\n2. Say Goodbye\nEnter your choice: ";
+    cin >> choice;
+
+    switch (choice) {
+        case 1:
+            cout << "Hello!" << endl;
+            break;
+        case 2:
+            cout << "Goodbye!" << endl;
+            break;
+        default:
+            cout << "Invalid choice!" << endl;
+            break;
+    }
+
+    // 3. FOR Loop - Print first 5 natural numbers
+    cout << "\nUsing for loop: ";
+    for (int i = 1; i <= 5; i++) {
+        cout << i << " ";
+    }
+    cout << endl;
+
+    // 4. WHILE Loop - Countdown from 5
+    int count = 5;
+    cout << "Using while loop: ";
+    while (count > 0) {
+        cout << count << " ";
+        count--;
+    }
+    cout << endl;
+
+    // 5. DO-WHILE Loop - Runs at least once
+    char again;
+    do {
+        cout << "\nThis is a do-while loop. Do you want to repeat? (y/n): ";
+        cin >> again;
+    } while (again == 'y' || again == 'Y');
+
+    return 0;
+}
